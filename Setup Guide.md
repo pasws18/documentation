@@ -102,9 +102,9 @@ Run all following commands inside the *pastub2019mobileapp* directory.
 
 * Open the file *pastub2019mobileapp/src/lib/config.json* and add the IP you obtained from docker-machine ip pastub2019.
 Don't add a prefix like *http* in front of the IP and don't add a suffix like a port to the IP.
-```json
+```js
 export default {
-apiEndpoint: 'x.x.x.x',
+    apiEndpoint: 'x.x.x.x',
 }
 ```
 **Hint**: If you don't add your own IP, you are using the backend of the PAS team.
