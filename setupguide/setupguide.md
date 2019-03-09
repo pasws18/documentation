@@ -198,11 +198,19 @@ npm install
 
 #### Start the app
 
-Run the following command from within the `pastub2019mobileapp` directory:
+Run the following commands from within the `pastub2019mobileapp` directory:
 
-```sh
-react-native run-android
-```
+1. Run the package server  
+
+    ```sh
+    npm start
+    ```
+
+2. Run (deploy) the mobile app onto the virtual device
+
+    ```sh
+    react-native run-android
+    ```
 
 _**Hint**: If the application doesn't start on the virtual device, make sure that you set the environment variables correctly._
 
