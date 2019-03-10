@@ -134,6 +134,7 @@ Install one of either [Oracle JDK 8u201](http://www.oracle.com/technetwork/java/
 
 1. **Install [Android Studio](https://developer.android.com/studio/install)**  
 Choose "custom" setup and make sure the `Android SDK`, `Android SDK Platform` and `Android Virtual Device` options are checked.
+In the installation process you may be asked to install KVM. This is not necessary but significantly raises the emulator's speed. For installing KVM, we refer to the android developer guide: https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux
 
 2. **Install [Android SDK](https://developer.android.com/studio/intro/update) 8.1 (Oreo)**  
 This can be done by using the Android Studio SDK Manager. The SDK Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "SDK Manager".  
