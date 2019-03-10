@@ -145,7 +145,7 @@ Select the "SDK Platforms" tab from within the SDK Manager, then check the box n
 Click on the "Apply" button to install the selected components.
 
 3. **Configure the `ANDROID_HOME` environment variable**  
-Add the following lines to your `$HOME/.bash_profile` config file:
+Add the following lines to your `$HOME/.bash_profile` config file (create it, if not already existing):
     ```sh
     export ANDROID_HOME=$HOME/Android/Sdk
     export PATH=$PATH:$ANDROID_HOME/emulator
