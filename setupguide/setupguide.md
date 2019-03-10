@@ -128,7 +128,7 @@ npm install -g react-native-cli
 
 #### Java Development Kit
 
-Install [Java](https://www.java.com/de/download/help/download_options.xml) 8u201.
+Install one of either [Oracle JDK 8](http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html) or [OpenJDK 8](http://openjdk.java.net/install/).
 
 #### Android Studio
 
