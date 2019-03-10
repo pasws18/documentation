@@ -142,6 +142,7 @@ Select the "SDK Platforms" tab from within the SDK Manager, then check the box n
 
     * `Android SDK Platform 27`
     * `Intel x86 Atom_64 System Image` and `Google APIs Intel x86 Atom System Image`
+
 Click on the "Apply" button to install the selected components.
 
 3. **Configure the `ANDROID_HOME` environment variable**  
