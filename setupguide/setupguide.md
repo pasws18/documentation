@@ -141,8 +141,7 @@ This can be done by using the Android Studio SDK Manager. The SDK Manager can be
 Select the "SDK Platforms" tab from within the SDK Manager, then check the box next to "Show Package Details" in the bottom right corner. Look for and expand the `Android 8.1 (Oreo)` entry, then make sure the following items are checked:
 
     * `Android SDK Platform 27`
-    * `Intel x86 Atom_64 System Image` and `Google APIs Intel x86 Atom System Image`
-
+    * `Intel x86 Atom_64 System Image` and `Google APIs Intel x86 Atom System Image`  
 Click on the "Apply" button to install the selected components.
 
 3. **Configure the `ANDROID_HOME` environment variable**  
