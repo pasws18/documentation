@@ -142,7 +142,7 @@ Select the "SDK Platforms" tab from within the SDK Manager, then check the box n
 
     * `Android SDK Platform 27`
     * `Intel x86 Atom_64 System Image` and `Google APIs Intel x86 Atom System Image`  
-Click on the "Apply" button to install the selected components.
+   Click on the "Apply" button to install the selected components.
 
 3. **Configure the `ANDROID_HOME` environment variable**  
 Add the following lines to your `$HOME/.bash_profile` config file (create it, if not already existing):
@@ -153,7 +153,7 @@ Add the following lines to your `$HOME/.bash_profile` config file (create it, if
     export PATH=$PATH:$ANDROID_HOME/tools/bin
     export PATH=$PATH:$ANDROID_HOME/platform-tools
     ```
-    Make sure to restart your shell or import these variables into your current session before proceeding.
+    Note: If you only add these lines to the `$HOME/.bash_profile` file, you will have to import these settings into every terminal session by executing `source $HOME/.bash_profile`. If you also add the above into your `$HOME/.bashrc` file, your terminal will automatically import these settings.
 
 #### Watchman
 
@@ -165,9 +165,10 @@ Install [Watchman](https://facebook.github.io/watchman/docs/install.html#buildin
 
 _**Note**: You can also use a physical android device for development purposes. For more information we refer to the [React Native Getting Started Guide](https://facebook.github.io/react-native/docs/getting-started.html)._
 
-To create an Android Virtual Device, you have to start the **AVD Manager** first by clicking this icon inside Android Studio:  
+To create an Android Virtual Device, you have to start the **AVD Manager** first. The AVD Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "AVD Manager".  
+Alternatively, if you already have an opened project, you can start the AVD Manager by clicking this icon inside Android Studio:  
 ![AVD Manager Icon](./img/avd.jpg)  
-The creation of new virtual devices is well described on the [Android Studio Documentation](https://developer.android.com/studio/run/managing-avds). Although you can choose any virtual phone, we recommend the **Nexus 5X**. It is important though that you install the required Android SDK that we use in our project, which is **Android 8.1 (Oreo)** and **API Level 27**.  
+The creation of new virtual devices is well described on the [Android Studio Documentation](https://developer.android.com/studio/run/managing-avds). Although you can choose any virtual phone, we recommend the **Nexus 5X**. It is important though that you install the required Android SDK that we use in our project, which is **Android 8.1 (Oreo)** and **API Level 27**. 
 ![Android SDK](./img/android_sdk.png)
 
 #### Running the virtual device
@@ -207,6 +208,7 @@ Run the following commands from within the `pastub2019mobileapp` directory:
     ```sh
     npm start
     ```
+    Known issue: If you installed watchmen, the above command may fail saying that a file name `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with 'touch .watchmanconfig'.
 
 2. Run (deploy) the mobile app onto the virtual device
 
