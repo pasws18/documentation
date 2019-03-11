@@ -135,7 +135,7 @@ Install one of either [Oracle JDK 8u201](http://www.oracle.com/technetwork/java/
 1. **Install [Android Studio](https://developer.android.com/studio/install)**  
 Choose "custom" setup and make sure the `Android SDK`, `Android SDK Platform` and `Android Virtual Device` options are checked.  
 In the installation process you may be asked to install KVM. This is not necessary but significantly raises the emulator's speed. For installing KVM, we refer to the android developer guide: https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux.  
-_**Note**: Installing KVM may differ in each linux distribution and version. For example, we had no problems installing KVM on a Manjaro system. The installation on Ubuntu 18.04 LTS however did not work flawless and we had to invest some time in fixing the occured problems. An incomplete KVM installation may also produce other problems, e.g. not being able to start the "AVD Manager" of Android Studio. Thus, we cannot provide a guarantee a flawless installation process for KVM and the installation of KVM happens "at the user's own risk"._
+_**Note**: Installing KVM may differ in each linux distribution and version. For example, we had no problems installing KVM on a Manjaro system. The installation on Ubuntu 18.04 LTS however did not work flawless and we had to invest some time in fixing the occured problems. An incomplete KVM installation may also produce other problems, e.g. not being able to start the "AVD Manager" of Android Studio. Thus, we cannot guarantee a flawless installation process for KVM and the installation of KVM happens "at the user's own risk"._
 
 2. **Install [Android SDK](https://developer.android.com/studio/intro/update) 8.1 (Oreo)**  
 This can be done by using the Android Studio SDK Manager. The SDK Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "SDK Manager".  
@@ -193,7 +193,7 @@ Don't add a prefix like *http* in front of the IP and don't add a suffix like a 
 
 #### Install the project dependencies
 
-Run the following command from inside the `pastub2019mobileapp` directory:  
+Run the following command from inside the extracted directory:  
 
 ```sh
 npm install
@@ -201,14 +201,14 @@ npm install
 
 #### Start the app
 
-Run the following commands from within the `pastub2019mobileapp` directory:
+Run the following commands from within the extracted` directory:
 
 1. Run the package server  
 
     ```sh
     npm start
     ```
-    Known issue: If you installed watchmen, the above command may fail saying that a file name `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with 'touch .watchmanconfig'.
+    Known issue: If you installed watchmen, the above command may fail saying that a file name `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
 
 2. Run (deploy) the mobile app onto the virtual device
 
@@ -221,7 +221,7 @@ _**Hint**: If the application doesn't start on the virtual device, make sure tha
 #### Use the app
 
 When you start the app for the first time, you need to log in.
-Enter `admin` as username and `adminiscooler` as password. Also make sure to allow the app to use the emulators location and set the emulators location to a location in Berlin. (e.g. 52.5140, 13.3350)
+Enter `admin` as username and `adminiscooler` as password. Also make sure to allow the app to use the emulators location and set the emulators location to a location in Berlin. (e.g. 52.5140, 13.3350). It possibly happens, that some markers on the map are not displayed correctly (indicated by the "default" red Google Maps Markers). To fix issue just reload the app by either double pressing `R` or pressing `Ctrl+M` and selecting "Reload" in the pop up menu.
 
 ### Alternative to AVD
 
