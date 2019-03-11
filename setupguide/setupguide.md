@@ -201,14 +201,14 @@ npm install
 
 #### Start the app
 
-Run the following commands from within the extracted` directory:
+Run the following commands from within the extracted directory:
 
 1. Run the package server  
 
     ```sh
     npm start
     ```
-    Known issue: If you installed watchmen, the above command may fail saying that a file name `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
+    Known issue: If you installed watchmen, the above command may fail saying that a file named `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
 
 2. Run (deploy) the mobile app onto the virtual device
 
