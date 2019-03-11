@@ -107,7 +107,7 @@ _Authors: D. Bosin, A. Schürer, S. Lienau_
 
 Install Java, Node.js, npm, React Native, Android Studio and SDK.
 Set the IP of the backend.
-Build and execute the android app on your android phone or android virtual device (AVD).
+Build and execute the android app on android virtual device (AVD).
 
 ### Installing dependencies
 
@@ -222,20 +222,3 @@ _**Hint**: If the application doesn't start on the virtual device, make sure tha
 
 When you start the app for the first time, you need to log in.
 Enter `admin` as username and `adminiscooler` as password. Also make sure to allow the app to use the emulators location and set the emulators location to a location in Berlin. (e.g. 52.5140, 13.3350). It possibly happens, that some markers on the map are not displayed correctly (indicated by the "default" red Google Maps Markers). To fix issue just reload the app by either double pressing `R` or pressing `Ctrl+M` and selecting "Reload" in the pop up menu.
-
-### Alternative to AVD
-
-The following steps describe how to run the mobile app on a real Android Device
-
-* Enable [developer mode](https://developer.android.com/studio/debug/dev-options) on your device.
-
-* Connect your Android Device with your computer via USB and accept the alert which is popping up onto your device.
-
-* Run the commands inside the *pastub2019mobileapp* directory to install the app on your device.
-
-```sh
-npm install
-react-native run-android
-```
-
-The mobile app is now installed and you can start using it.
