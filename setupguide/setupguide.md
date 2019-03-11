@@ -133,8 +133,9 @@ Install one of either [Oracle JDK 8u201](http://www.oracle.com/technetwork/java/
 #### Android Studio
 
 1. **Install [Android Studio](https://developer.android.com/studio/install)**  
-Choose "custom" setup and make sure the `Android SDK`, `Android SDK Platform` and `Android Virtual Device` options are checked.
-In the installation process you may be asked to install KVM. This is not necessary but significantly raises the emulator's speed. For installing KVM, we refer to the android developer guide: https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux
+Choose "custom" setup and make sure the `Android SDK`, `Android SDK Platform` and `Android Virtual Device` options are checked.  
+In the installation process you may be asked to install KVM. This is not necessary but significantly raises the emulator's speed. For installing KVM, we refer to the android developer guide: https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux.
+_**Note**: Installing KVM may differ in each linux distribution and version. For example, we had no problems installing KVM on a Manjaro system. The installation on Ubuntu 18.04 LTS however did not work flawless and we had to invest some time in fixing the occured problems. An incomplete KVM installation may also produce other problems, e.g. not being able to start the "AVD Manager" of Android Studio. Thus, we cannot provide a guarantee a flawless installation process for KVM and the installation of KVM happens "at the user's own risk".
 
 2. **Install [Android SDK](https://developer.android.com/studio/intro/update) 8.1 (Oreo)**  
 This can be done by using the Android Studio SDK Manager. The SDK Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "SDK Manager".  
@@ -177,10 +178,9 @@ The recently created virtual device can be started from the **AVD Manager**. It 
 
 #### Extract and configure the mobileapp
 
-1. Extract the `mobileapp.zip`, which can be found inside the same folder as this setup guide, into a new directory named `pastub2019mobileapp`.
-Run all following commands inside the `pastub2019mobileapp` directory.
+1. Extract the `mobileapp.zip`, which can be found inside the same folder as this setup guide. Run all following commands inside the extracted directory.
 
-2. Open the file `pastub2019mobileapp/src/lib/config.json` and add the IP you obtained from docker-machine ip pastub2019.
+2. Open the file `src/lib/config.json` inside the extracted folder and add the IP you obtained from docker-machine ip pastub2019.
 Don't add a prefix like *http* in front of the IP and don't add a suffix like a port to the IP.
 
     ```js
