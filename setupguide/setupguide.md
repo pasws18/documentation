@@ -153,7 +153,7 @@ Add the following lines to your `$HOME/.bash_profile` config file (create it, if
     export PATH=$PATH:$ANDROID_HOME/tools/bin
     export PATH=$PATH:$ANDROID_HOME/platform-tools
     ```
-    _**Note**: If you only add these lines to the `$HOME/.bash_profile` file, you will have to import these settings into every terminal session by executing `source $HOME/.bash_profile`. If you also add the above into your `$HOME/.bashrc` file, your terminal will automatically import these settings on start up (i.e., you still have to restart your terminal once)._
+    _**Note**: If you only add these lines to the `$HOME/.bash_profile` file, you will have to import these settings into every terminal session by executing `source $HOME/.bash_profile`. If you also add the above lines into your `$HOME/.bashrc` file, your terminal will automatically import these settings on start up (i.e., you still have to restart your terminal once)._
 
 #### Watchman
 
