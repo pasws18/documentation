@@ -142,7 +142,7 @@ Select the "SDK Platforms" tab from within the SDK Manager, then check the box n
 
     * `Android SDK Platform 27`
     * `Intel x86 Atom_64 System Image` and `Google APIs Intel x86 Atom System Image`  
-   Click on the "Apply" button to install the selected components.
+Click on the "Apply" button to install the selected components.
 
 3. **Configure the `ANDROID_HOME` environment variable**  
 Add the following lines to your `$HOME/.bash_profile` config file (create it, if not already existing):
@@ -168,8 +168,8 @@ _**Note**: You can also use a physical android device for development purposes. 
 To create an Android Virtual Device, you have to start the **AVD Manager** first. The AVD Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "AVD Manager".  
 Alternatively, if you already have an opened project, you can start the AVD Manager by clicking this icon inside Android Studio:  
 ![AVD Manager Icon](./img/avd.jpg)  
-The creation of new virtual devices is well described on the [Android Studio Documentation](https://developer.android.com/studio/run/managing-avds). Although you can choose any virtual phone, we recommend the **Nexus 5X**. It is important though that you install the required Android SDK that we use in our project, which is **Android 8.1 (Oreo)** and **API Level 27**. 
-![Android SDK](./img/android_sdk.png)
+The creation of new virtual devices is well described on the [Android Studio Documentation](https://developer.android.com/studio/run/managing-avds). Although you can choose any virtual phone, we recommend the **Nexus 5X**. It is important though that you install the required Android SDK that we use in our project, which is **Android 8.1 (Oreo)** and **API Level 27**. The target also needs support for Google APIs as indicated in the "Target" column.
+![Android SDK](./img/avdmanager.png)
 
 #### Running the virtual device
 
