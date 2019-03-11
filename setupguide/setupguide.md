@@ -134,7 +134,7 @@ Install one of either [Oracle JDK 8u201](http://www.oracle.com/technetwork/java/
 
 1. **Install [Android Studio](https://developer.android.com/studio/install)**  
 Choose "custom" setup and make sure the `Android SDK`, `Android SDK Platform` and `Android Virtual Device` options are checked.  
-In the installation process you may be asked to install KVM. This is not necessary but significantly raises the emulator's speed. For installing KVM, we refer to the android developer guide: https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux.
+In the installation process you may be asked to install KVM. This is not necessary but significantly raises the emulator's speed. For installing KVM, we refer to the android developer guide: https://developer.android.com/studio/run/emulator-acceleration?utm_source=android-studio#vm-linux.  
 _**Note**: Installing KVM may differ in each linux distribution and version. For example, we had no problems installing KVM on a Manjaro system. The installation on Ubuntu 18.04 LTS however did not work flawless and we had to invest some time in fixing the occured problems. An incomplete KVM installation may also produce other problems, e.g. not being able to start the "AVD Manager" of Android Studio. Thus, we cannot provide a guarantee a flawless installation process for KVM and the installation of KVM happens "at the user's own risk"._
 
 2. **Install [Android SDK](https://developer.android.com/studio/intro/update) 8.1 (Oreo)**  
