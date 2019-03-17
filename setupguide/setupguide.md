@@ -221,7 +221,6 @@ Run the following commands from within the extracted directory:
     echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
     echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_queued_events
     echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances
-    watchman watch-del-all
     watchman shutdown-server
      ```
 
