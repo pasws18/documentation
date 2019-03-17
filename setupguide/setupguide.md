@@ -101,7 +101,7 @@ In the next section we guide you through the setup of the mobile app.
 
 ## Mobile App
 
-_Authors: D. Bosin, A. Schürer, S. Lienau_
+_Authors: D. Bosin, A. Schürer, S. Lienau, A. Dittmann_
 
 ### Abstract definition
 
@@ -209,7 +209,7 @@ Run the following commands from within the extracted directory:
     ```sh
     npm start
     ```
-    Known issue: If you installed watchmen, the above command may fail saying that a file named `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
+    **Known issue:** If you installed watchmen, the above command may fail saying that a file named `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
 
 2. Run (deploy) the mobile app onto the virtual device
 
