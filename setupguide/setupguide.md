@@ -169,7 +169,7 @@ _**Note**: You can also use a physical android device for development purposes. 
 To create an Android Virtual Device, you have to start the **AVD Manager** first. The AVD Manager can be accessed from the "Welcome to Android Studio" screen. Click on "Configure", then select "AVD Manager".  
 Alternatively, if you already have an opened project, you can start the AVD Manager by clicking this icon inside Android Studio:  
 ![AVD Manager Icon](./img/avd.jpg)  
-_**Note**: If starting the AVD Manager fails, or you get an error saying that Android Studio has no permission to access `/dev/kvm`, execute the following command: `sudo setfacl -m u:$USER:rwx /dev/kvm`
+_**Note**: If starting the AVD Manager fails, or you get an error saying that Android Studio has no permission to access `/dev/kvm`, execute the following command: `sudo setfacl -m u:$USER:rwx /dev/kvm`_
 The creation of new virtual devices is well described on the [Android Studio Documentation](https://developer.android.com/studio/run/managing-avds). Although you can choose any virtual phone, we recommend the **Nexus 5X**. It is important though that you install the required Android SDK that we use in our project, which is **Android 8.1 (Oreo)** and **API Level 27**. The target also needs support for Google APIs as indicated in the "Target" column.
 ![Android SDK](./img/avdmanager.png)
 
