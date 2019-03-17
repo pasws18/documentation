@@ -209,13 +209,21 @@ Run the following commands from within the extracted directory:
     ```sh
     npm start
     ```
-    **Known issue:** If you installed watchmen, the above command may fail saying that a file named `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
+    **Known issue:** If you installed watchman, the above command may fail saying that a file named `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
 
 2. From another shell, run (deploy) the mobile app onto the virtual device
 
     ```sh
     react-native run-android
     ```
+    **Know issue:** If you installed watchman and the app is stuck at 0% loading the `index.js`, execute the following and try                  again:
+    ```
+    echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_watches
+    echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_queued_events
+    echo 999999 | sudo tee -a /proc/sys/fs/inotify/max_user_instances
+    watchman watch-del-all
+    watchman shutdown-server
+     ```
 
 _**Hint**: If the application doesn't start on the virtual device, make sure that you set the environment variables correctly._
 
