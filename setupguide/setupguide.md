@@ -211,7 +211,7 @@ Run the following commands from within the extracted directory:
     ```
     **Known issue:** If you installed watchmen, the above command may fail saying that a file named `.watchmanconfig` is missing. To fix         this issue just create the file, e.g. with `touch .watchmanconfig`.
 
-2. Run (deploy) the mobile app onto the virtual device
+2. From another shell, run (deploy) the mobile app onto the virtual device
 
     ```sh
     react-native run-android
